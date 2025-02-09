@@ -1,0 +1,16 @@
+name: "flight_delay_project"
+version: "1.0"
+config-version: 2
+
+profile: "default"
+
+model-paths: ["dbt_project/models"]
+target-path: "target"
+clean-targets: ["target", "dbt_modules"]
+
+models:
+  flight_delay_project:
+    silver:
+      +materialized: table
+    gold:
+      +materialized: table

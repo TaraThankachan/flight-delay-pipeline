@@ -1,0 +1,17 @@
+WITH delays AS (
+    SELECT 
+        AIRLINE,
+        ORIGIN_AIRPORT,
+        DESTINATION_AIRPORT,
+        ARRIVAL_DELAY,
+        DEPARTURE_DELAY
+    FROM flight_delays_filtered
+)
+SELECT
+    AIRLINE,
+    ORIGIN_AIRPORT,
+    DESTINATION_AIRPORT,
+    AVG(ARRIVAL_DELAY) AS avg_arrival_delay,
+    AVG(DEPARTURE_DELAY) AS avg_departure_delay
+FROM delays
+GROUP BY AIRLINE, ORIGIN_AIRPORT, DESTINATION_AIRPORT

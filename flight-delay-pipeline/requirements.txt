@@ -1,0 +1,9 @@
+pandas
+sqlalchemy
+pymysql
+cryptography
+dbt-core
+dbt-mysql
+dagster
+dagster-webserver
+dagster-dbt
