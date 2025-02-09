@@ -1,0 +1,9 @@
+# macOS system files
+.DS_Store
+.DS_Store:Zone.Identifier
+
+# Windows Zone.Identifier files
+README.md:Zone.Identifier
+dbt_project.yml:Zone.Identifier
+docker-compose.yml:Zone.Identifier
+requirements.txt:Zone.Identifier
